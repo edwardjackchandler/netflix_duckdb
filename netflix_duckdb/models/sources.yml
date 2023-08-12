@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: netflix
+    schema: main
+    tables:
+      - name: raw_titles
+        identifier: netflix_titles
+
+      - name: raw_originals_imdb
+        identifier: netflix_originals_imdb
+
+      # - name: reviews
+      #   identifier: raw_reviews
+      #   loaded_at_field: date
+      #   freshness:
+      #     warn_after: {count: 1, period: hour}
+      #     error_after: {count: 24, period: hour}

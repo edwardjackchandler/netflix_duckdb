@@ -1,0 +1,2 @@
+CREATE TABLE netflix_titles AS SELECT * FROM read_csv_auto(['~/Downloads/netflix_titles.csv']);
+CREATE TABLE netflix_originals_imdb AS SELECT * FROM read_csv_auto(['~/Downloads/NetflixOriginals_utf8.csv']);
